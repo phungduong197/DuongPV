@@ -31,4 +31,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem "bootstrap-sass", "3.3.7"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

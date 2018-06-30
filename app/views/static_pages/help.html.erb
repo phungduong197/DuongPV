@@ -1,0 +1,10 @@
+  <% provide :title, t(".title") %>
+
+  <h1><%= t ".title" %></h1>
+    <p>
+      <%= t ".info1" %>
+      <%= link_to t(".help"), "http://www.railstutorial.org/help" %>
+      <%= t ".info2" %>
+      <%= link_to t("static_pages.ror") + " " + t("static_pages.about.book"),
+      "http://www.railstutorial.org/book" %>
+    </p>
