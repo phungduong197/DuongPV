@@ -32,4 +32,7 @@ en:
       new: news
     header:
       signup: Signup
-    
+  user:
+    new:
+      user: Page New User
+      info: This is the page New User
