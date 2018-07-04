@@ -32,7 +32,19 @@ en:
       new: news
     header:
       signup: Signup
-  user:
+  users:
     new:
-      user: Page New User
+      signup: Sign Up
       info: This is the page New User
+      submit: Create my account
+      name: Name
+      email: Email
+      pass: Passoword
+      pass_conf: Passoword Confirmation
+  shared:
+    mess: The form contains
+  user:
+    create:
+      success: "Welcome to the Sample App!"
+    show:
+      err: "Khong tim thay"

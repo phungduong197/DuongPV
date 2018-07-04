@@ -6,9 +6,17 @@
 $coler-center-a-hover: blue;
 $color-footer-a: #555;
 $color-footer-a-hover: #222;
+$color-form-input: #bbb;
 $gray-light: #777;
 $gray-medium-light: #eaeaea;
 $white: #fff; 
+$red: red;
+
+@mixin box_sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
 body {
   padding-top: 60px;
@@ -114,5 +122,87 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+}
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+  @include box_sizing;
+}
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid $color-form-input;
+  margin-bottom: 15px;
+  width: 100%;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+.error_explanation {
+  color: $red;
+
+  ul {
+    color: $red;
+    margin: 0 0 30px;
+  }
+}
+
+.field_with_errors {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  
+  .form-control {
+    color: $state-danger-text;
+    border: 5px;
+    margin-bottom: .5px;
   }
 }
