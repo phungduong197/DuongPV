@@ -41,10 +41,21 @@ en:
       email: Email
       pass: Passoword
       pass_conf: Passoword Confirmation
+    create:
+      success: "Welcome to the DuongPV App!"
+    show:
+      err: Not Found
+
   shared:
     mess: The form contains
-  user:
-    create:
-      success: "Welcome to the Sample App!"
-    show:
-      err: "Khong tim thay"
+  sessions:
+    new:
+      title: Login
+      newuser: New user
+      daner: Invalid email/password combination
+      user: User
+      acc: Account
+      profile: Profile
+      setting: Settings
+      logout: Log out
+
