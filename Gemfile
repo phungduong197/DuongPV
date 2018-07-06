@@ -34,5 +34,8 @@ end
 
 gem "bcrypt", "3.1.12"
 gem "bootstrap-sass", "3.3.7"
+gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
+gem "faker", "1.7.3"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "will_paginate", "3.1.6"
