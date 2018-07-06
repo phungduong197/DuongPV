@@ -43,8 +43,9 @@ en:
       email: Email
       pass: Passoword
       pass_conf: Passoword Confirmation
+      btn_sub: Save changes
     create:
-      success: "Welcome to the DuongPV App!"
+      success: "Please check your email to activate your account."
     show:
       err: Not Found
     edit:
@@ -80,3 +81,15 @@ en:
       remen: Remember me on this computer
     create:
       danger: Invalid email/password combination
+      mes: Account not activated! Check your email for the activation link
+  account:
+    edit:
+      success: Account activated!
+      danger: Invalid activation link
+  user_mail:
+    account_activation:
+      sub: Account activation
+      title: Account
+      hi: Hi
+      welcome: Welcome to the Sample App! Click on the link below to activate your account
+      activate: Activate
