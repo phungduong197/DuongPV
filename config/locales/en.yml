@@ -52,10 +52,10 @@ en:
     new:
       title: Login
       newuser: New user
-      daner: Invalid email/password combination
+      danger: Invalid email/password combination
       user: User
       acc: Account
       profile: Profile
       setting: Settings
       logout: Log out
-
+      remen: Remember me on this computer
