@@ -206,3 +206,18 @@ input {
     margin-bottom: .5px;
   }
 }
+
+.checkbox {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+#session_remember_me {
+  margin-left: 0;
+  margin-top: 1px;
+  width: auto;
+}
