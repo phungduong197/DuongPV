@@ -33,6 +33,8 @@ en:
     header:
       signup: Signup
   users:
+    index:
+      all: All users
     new:
       signup: Sign Up
       info: This is the page New User
@@ -45,17 +47,36 @@ en:
       success: "Welcome to the DuongPV App!"
     show:
       err: Not Found
-
+    edit:
+      title: Edit user
+      h1: Update your profile 
+      btn_sub: Save changes
+      success: Profile updated
+      change: change 
+    update:
+      btn_sub: Save changes
+      success: Profile updated
+      change: change 
+    destroy:
+      delete: Delete
+      fail: Delete Fail
+      success: User deleted
+      sure: You sure?
+    logged_in_user:
+      ple: Please log in.
+    find_id:
+      fails: Not Found
   shared:
     mess: The form contains
   sessions:
     new:
       title: Login
       newuser: New user
-      danger: Invalid email/password combination
       user: User
       acc: Account
       profile: Profile
       setting: Settings
       logout: Log out
       remen: Remember me on this computer
+    create:
+      danger: Invalid email/password combination
