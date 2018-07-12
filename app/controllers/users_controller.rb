@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: [:index, :update, :destroy]
+  before_action :logged_in_user, only: [:index, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
   before_action :find_id, only: [:show, :update, :destroy]
-  
+
   def index
-    @users = User.paginate page: params[:page], per_page: Settings.limit
+    @users = User.paginate page: params[:page],
+      per_page: Settings.limit
   end
 
   def show
@@ -21,9 +22,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".success"
+      redirect_to root_url
     else
       render :new
     end
@@ -41,11 +42,10 @@ class UsersController < ApplicationController
   def destroy
     if @user.destroy
       flash[:success] = t ".success"
-      redirect_to users_url
     else
       flash[:danger] = t ".fail"
-      redirect_to users_url
     end
+    redirect_to users_url
   end
 
   private
