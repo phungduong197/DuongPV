@@ -43,23 +43,6 @@ namespace BTLMISA.Models
             this.Passport = Passport;
         }
 
-        public Employee ( List<string> list)
-        {
-            this.EmployeeCode = list[0];
-            this.EmployeeName = list[1];
-            if(list[2].Equals("Nam"))
-            {
-                this.Gender = 1;
-            }
-            else
-            {
-                this.Gender = 0;
-            }
-            this.DateOfBirth = list[3];
-            this.JobPosition = list[4];
-            this.WorkUnit = list[5];
-        }
-
         public string EmployeeCode { get => _EmployeeCode; set => _EmployeeCode = value; }
         public string EmployeeName { get => _EmployeeName; set => _EmployeeName = value; }
         public int Gender { get => _Gender; set => _Gender = value; }

@@ -3,15 +3,14 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <!--<link href="../Content/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../Content/css/bootstrap.css" rel="stylesheet" />-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<link href="../Content/css/bootstrap.min.css" rel="stylesheet" />-->
+    <!--<link href="../Content/css/bootstrap.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <link href="../Content/css/style.css" rel="stylesheet" />
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-
     <div class="header">
         <div class="header-left">
             <div id="icon-menu" class="icon-header"></div>
@@ -55,7 +54,6 @@
             </div>
         </div>
     </div>
-
     <div class="content">
         <div class="main-menu">
             <div>
@@ -81,6 +79,7 @@
                     </div>
                 </div>
             </div>
+
             <div>
                 <div style="display: flex; border-top: 1px solid #016087;">
                     <div class="menu-tax menu sup-menu">
@@ -150,6 +149,7 @@
                     <!--  -->
                 </div>
             </div>
+
             <div>
                 <div style="display: flex; border-top: 1px solid #016087;">
                     <div class="menu-receive menu sup-menu">
@@ -175,6 +175,7 @@
                     <div class="sub-menu-item">Tiếp nhận</div>
                 </div>
             </div>
+
             <div>
                 <div style="display: flex; border-top: 1px solid #016087;">
                     <div class="menu-bonus menu sup-menu">
@@ -188,6 +189,7 @@
                     <div class="sub-menu-item">Sự cố</div>
                 </div>
             </div>
+
             <div>
                 <div style="display: flex; border-top: 1px solid #016087;">
                     <div class="menu-evaluate menu sup-menu">
@@ -212,6 +214,7 @@
                     <div class="sub-menu-item">Phúc lợi</div>
                 </div>
             </div>
+
             <div>
                 <div style="display: flex; border-top: 1px solid #016087;">
                     <div class="menu-procedure menu sup-menu">
@@ -226,6 +229,7 @@
                     <div class="sub-menu-item">Thôi việc</div>
                 </div>
             </div>
+
             <div>
                 <div style="display: flex; border-top: 1px solid #016087;">
                     <div class="menu-report menu sup-menu">
@@ -428,7 +432,7 @@
         <!-- Author: Tạ Đăng Tùng -->
         <!-- Nội dung: Danh sách hiển thị thông tin nhân viên -->
         <!--Main-content-->
-        <div id="listEmployees" class="main-content">
+        <div class="main-content">
             <div class="header-main-content display-flex">
                 <div class="left-content">
                     <span class="parent-category c-blue">Hồ sơ nhân viên</span>
@@ -449,13 +453,15 @@
                 </div>
             </div>
             <div class="tool-bar">
-                <button class="btnToolbar" id="btnAdd"><span class="glyphicon glyphicon-plus c-blue"></span>Thêm</button>
+                <button class="btnToolbar" id="btn-add"><span class="glyphicon glyphicon-plus c-blue"></span>Thêm</button>
                 <button class="btnToolbar"><span class="glyphicon glyphicon-duplicate c-blue"></span>Nhân bản</button>
                 <button class="btnToolbar"><span class="glyphicon glyphicon-edit c-blue"></span>Sửa</button>
-                <button class="btnToolbar"><span class="glyphicon glyphicon-remove c-red"></span>Xóa</button>
+                <button class="btnToolbar" id="btn-del"><span class="glyphicon glyphicon-remove c-red"></span>Xóa</button>
                 <button class="btnToolbar"><span class="glyphicon glyphicon-refresh c-blue"></span>Nạp</button>
             </div>
+
             <div class="main-right-content">
+
                 <div class="list">
                     <table class="table">
                         <thead>
@@ -482,7 +488,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -502,8 +508,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="name w3 box-seach">
                                     <div class="display-flex seach">
@@ -512,7 +518,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -532,8 +538,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="gender w1 box-seach">
                                     <div class="display-flex seach">
@@ -542,7 +548,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -562,8 +568,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="date-of-birth box-seach">
                                     <div class="display-flex seach">
@@ -572,7 +578,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -592,8 +598,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="level w2 box-seach">
                                     <div class="display-flex seach">
@@ -602,7 +608,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -622,8 +628,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="school w3 box-seach">
                                     <div class="display-flex seach">
@@ -632,7 +638,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -652,8 +658,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="major w3 box-seach">
                                     <div class="display-flex seach">
@@ -662,7 +668,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -682,8 +688,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="job-position w3 box-seach">
                                     <div class="display-flex seach">
@@ -692,7 +698,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -712,8 +718,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="word-unit w3 box-seach">
                                     <div class="display-flex seach">
@@ -722,7 +728,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -742,8 +748,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="debt box-seach">
                                     <div class="display-flex seach">
@@ -752,7 +758,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -772,8 +778,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="date-official box-seach">
                                     <div class="display-flex seach">
@@ -782,7 +788,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -802,8 +808,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="cmt w2 box-seach">
                                     <div class="display-flex seach">
@@ -812,7 +818,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -832,8 +838,8 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                                 <td class="stop-follow box-seach">
                                     <div class="display-flex seach">
@@ -842,7 +848,7 @@
                                             <option value=""></option>
                                         </select>
                                     </div>
-                                    <!--<div class="dropdown-icon-choose">
+                                    <!-- <div class="dropdown-icon-choose">
                                     <div class="display-flex row-choose checked">
                                         <div class="glyphicon glyphicon-ok icon-choose"></div>
                                         <div><span class="icons">*</span> : Chứa</div>
@@ -862,15 +868,15 @@
                                     <div class="display-flex row-choose">
                                         <div class=" icon-choose"></div>
                                         <div><span class="icons">!</span> : Không chứa</div>
-                                    </div>
-                                </div>-->
+                                    </div> -->
+                                    <!--</div>-->
                                 </td>
                             </tr>
                         </thead>
                         <tbody id="tbody"></tbody>
                     </table>
                 </div>
-                <div class="sum-list">Tổng số: <b>280</b> bản ghi</div>
+                <div class="sum-list">Tổng số: <b id="sumList">0</b> bản ghi</div>
                 <div class="box-info-employee">
                     <div class="head-box">
                         <div href="" class="head-box-icon icon-left c-grey"><span class="glyphicon glyphicon-triangle-left"></span></div>
@@ -904,41 +910,41 @@
                             <div class="col1">
                                 <div class="row-info">
                                     <div class="left-row">Mã nhân viên</div>
-                                    <div class="right-row">NCV000001</div>
+                                    <div class="right-row EmployeeCode"></div>
                                 </div>
                                 <div class="row-info">
                                     <div class="left-row">Họ và tên</div>
-                                    <div class="right-row">Lê Thị Dưa</div>
+                                    <div class="right-row EmployeeName"></div>
                                 </div>
                                 <div class="row-info">
                                     <div class="left-row">Giới tính</div>
-                                    <div class="right-row">Nữ</div>
+                                    <div class="right-row gender"></div>
                                 </div>
                                 <div class="row-info">
                                     <div class="left-row">Ngày sinh</div>
-                                    <div class="right-row">01/01/1999</div>
+                                    <div class="right-row DateOfBirth"></div>
                                 </div>
                                 <div class="row-info">
                                     <div class="left-row">Số CMND/Thẻ căn cước</div>
-                                    <div class="right-row">1234567974</div>
+                                    <div class="right-row CMT"></div>
                                 </div>
                                 <div class="row-info">
                                     <div class="left-row">Hộ chiếu</div>
-                                    <div class="right-row"></div>
+                                    <div class="right-row Passport"></div>
                                 </div>
                             </div>
                             <div class="col2">
                                 <div class="row-info">
                                     <div class="left-row">Vị trí công việc</div>
-                                    <div class="right-row">Nhân viên hành chính</div>
+                                    <div class="right-row JobPosition"></div>
                                 </div>
                                 <div class="row-info">
                                     <div class="left-row">Đơn vị công tác</div>
-                                    <div class="right-row">MISA</div>
+                                    <div class="right-row WorkUnit"></div>
                                 </div>
                                 <div class="row-info">
                                     <div class="left-row">Ngày thử việc</div>
-                                    <div class="right-row"></div>
+                                    <div class="right-row DateTrial"></div>
                                 </div>
                             </div>
                         </div>
@@ -947,139 +953,6 @@
             </div>
         </div>
         <!-- Kết thúc phần danh sách thông tin nhân viên -->
-        <!-- Author: Nguyễn Ánh Phượng -->
-        <!-- Nội dung: Tạo form thêm nhân viên -->
-        <!--Main-content-->
-        <div id="formAddEmployees" class="main-content hiddenDiv" style="background: #ededed;">
-            <div class="header-main-content display-flex" style="background: #fff;     margin-bottom: 0;">
-                <div class="left-content">
-                    <span class="parent-category c-blue">Hồ sơ</span>
-                    <span class="glyphicon glyphicon-menu-right c-grey"></span>
-                    <span class="category">Thêm nhân viên</span>
-                </div>
-            </div>
-            <div class="tool-bar" style="    box-shadow: 2px 5px 9px #66666654;padding:0; padding-left: 16px;margin-left: 0;height: 30px;align-items: center; justify-items: center; display: flex; background: #fff;">
-                <button id="btnCat" class="btnToolbar"><span class="glyphicon glyphicon-floppy-disk c-blue"></span>Cất</button>
-                <button id="btnCatThem" class="btnToolbar"><span class="glyphicon glyphicon-floppy-open c-blue"></span>Cất & Thêm</button>
-                <button class="btnToolbar"><span class="glyphicon glyphicon-share-alt c-blue"></span>Hoãn</button>
-                <button class="btnToolbar"><span class="glyphicon glyphicon-cog c-blue"></span>Thiết lập ngầm định</button>
-                <button class="btnToolbar"><span class="glyphicon glyphicon-question-sign c-blue"></span>Giúp</button>
-                <button class="btnToolbar"><span class="glyphicon glyphicon-volume-up c-blue"></span>Phản hồi</button>
-                <button id="btnClose" class="btnToolbar"><span class="glyphicon glyphicon-remove c-red"></span>Đóng</button>
-            </div>
-            <div class="main-right-content" style="top: 65px; position: initial; border-bottom: none;    height: calc(100% - 80px);">
-                <div class="box-info-employee" style="height:100%;     margin-top: 10px; padding-top: 20px;     padding-left: 25px; margin-right: 20px">
-                    <div class="form-header">1. Thông tin chung</div>
-                    <div class="content-box display-flex">
-                        <div style="border-bottom: 1px solid #ccc;">
-                            <img src="../Images/ImageHandler1.png" alt="Ảnh đại diện">
-                            <div class="choose-img">Chọn ảnh</div>
-                        </div>
-                        <div class="form-content">
-                            <div class="form-content-information ">
-                                <div class="c1">
-                                    <div class="row-info-add">
-                                        <div class="left-row">Mã nhân viên<span style="color:red; margin-left: 5px">(*)</span></div>
-                                        <div class="right-row"><input id="employeesID" class="txtInput txtInput2" type="text" /></div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Họ và đệm</div>
-                                        <div class="right-row"><input class="txtInput1" type="text" /></div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Tên</div>
-                                        <div class="right-row"><input class="txtInput1" type="text" /></div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Họ và tên<span style="color:red; margin-left: 5px">(*)</span></div>
-                                        <div class="right-row"><input id="name" class="txtInput txtInput2" type="text" /></div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Giới tính</div>
-                                        <div class="right-row">
-                                            <select id="selectGrender" class="txtInput" type="text" name="" style="background:url('../Images/cbo-trigger.png') no-repeat; background-position: 98% 55%;">
-                                                <option>Nam</option>
-                                                <option>Nữ</option>
-                                                <option>Khác</option>
-                                            </select>
-                                            <!--<span class="trigger">
-                                            <img src="../Images/cbo-trigger.png" />
-                                        </span>-->
-                                        </div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Ngày sinh</div>
-                                        <div class="right-row ">
-                                            <div style="width: 171px;border: 1px solid #ccc;height: 100%;border-radius: 3px;">
-                                                <span>
-                                                    <input class="txtInput birthday" type="text" name="birthday" width="150" style="border: none;border-radius: 0;" />
-                                                </span>
-                                                <span class="img-birthday" style="border: none;border-radius: 0;">
-                                                    <img src="../Images/date-trigger.png" no-repeat />
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="c2">
-                                    <div class="row-info-add">
-                                        <div class="left-row">Địa chỉ</div>
-                                        <div class="right-row  address"><input type="text" /></div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Điện thoại</div>
-                                        <div class="right-row"><input type="text" /></div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Email</div>
-                                        <div class="right-row"><input type="text" /></div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Vị trí công việc<span style="color:red; margin-left: 5px">(*)</span></div>
-                                        <div class="right-row">
-                                            <!--<span> <input class="input2" type="text" name="" value="NV0001 - Giám đốc" /></span>-->
-                                            <select id="selectPosition" class="txtInput txtInput2" type="text" name="" style="background:url('../Images/cbo-trigger.png') no-repeat; background-position: 98% 55%; width: 85%;">
-                                                <option>Giám đốc</option>
-                                                <option>Nhân viên hành chính</option>
-                                                <option>Trưởng phòng</option>
-                                                <option>Trưởng phòng hành chính</option>
-                                                <option>Nhân viên</option>
-                                                <option>Nhân viên PTPM</option>
-                                            </select>
-                                            <!--<span class="trigger">
-                                            <img src="../Images/cbo-trigger.png" />
-                                        </span>-->
-                                            <span class="img-more">
-                                                <img src="../Images/more.png" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row-info-add">
-                                        <div class="left-row">Đơn vị công tác<span style="color:red; margin-left: 5px">(*)</span></div>
-                                        <div class="right-row">
-                                            <!--<span> <input class="input2" type="text" name="" value="Công ty Cổ phần MISA" /></span>-->
-                                            <select id="selectUnit" class="txtInput txtInput2" type="text" name="" style="background:url('../Images/cbo-trigger.png') no-repeat; background-position: 98% 55%; width: 85%;">
-                                                <option>Phòng hành chính tổng hợp</option>
-                                                <option>Trung tâm Phát triển phần mềm</option>
-                                            </select>
-                                            <!--<span class="trigger">
-                                            <img src="../Images/cbo-trigger.png" />
-                                        </span>-->
-                                            <span class="img-more">
-                                                <img src="../Images/more.png" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Kết thúc phần danh sách thông tin nhân viên -->
-
         <div class="modal fade" id="modal-update">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -1175,9 +1048,13 @@
             </div>
         </div>
     </div>
-
+    <!--<script src="../Content/js/bootstrap.min.js"></script>-->
+    <!--<script src="../Content/js/bootstrap.js"></script>-->
+    <!--<script src="../Content/js/jquery-3.3.1.min.js"></script>-->
+    
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="../Content/js/Script.js"></script>
 </body>
+
 </html>
