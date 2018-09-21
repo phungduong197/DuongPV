@@ -148,12 +148,7 @@
         $('.menu-sub-system').slideToggle();
     })
 
-    showList();
-    loadFormAdd();
-})
-
-function showList() {
-    $('#tbody').empty();
+    //Load data
     $.ajax({
         url: "/api/Employee",
         method: "GET",
@@ -162,11 +157,10 @@ function showList() {
         success: function (res) {
             var _class = "";
             var _table = "";
-            console.log(res);
+
+            var sum = 0;
             $.each(res, function (i, item) {
                 var gender = '';
-                //console.log(i);
-                console.log(item);
                 if (i % 2 == 0) {
                     _class = "row-grey";
                 }
@@ -174,186 +168,120 @@ function showList() {
                     _class = "row-white";
                 }
                 _table = "<tr class='row-table " + _class + "'>";
-                _table = _table + "<td>" + item.EmployeeCode + "</td>";
-                _table = _table + "<td>" + item.EmployeeName + "</td>";
-                if (item.Gender == 1) {
+                _table = _table + "<td class='EmployeeCode'>" + item.EmployeeCode + "</td>";
+                _table = _table + "<td class='EmployeeName'>" + item.EmployeeName + "</td>";
+                if (item.Gender == 0) {
                     gender = 'Nam';
                 } else {
                     gender = 'Nữ';
                 }
-                _table = _table + "<td>" + gender + "</td>";
-                _table = _table + "<td>" + item.DateOfBirth + "</td>";
-                _table = _table + "<td>" + item.LeverTraining + "</td>";
-                _table = _table + "<td>" + item.AddressTraining + "</td>";
-                _table = _table + "<td>" + item.Major + "</td>";
-                _table = _table + "<td>" + item.JobPosition + "</td>";
-                _table = _table + "<td>" + item.WorkUnit + "</td>";
-                _table = _table + "<td>" + item.DateTrial + "</td>";
-                _table = _table + "<td>" + item.DateOfficial + "</td>";
-                _table = _table + "<td>" + item.CMT + "</td>";
-                _table = _table + "<td>" + item.Passport + "</td></tr>";
+                _table = _table + "<td class='gender'>" + gender + "</td>";
+                _table = _table + "<td class='DateOfBirth'>" + item.DateOfBirth + "</td>";
+                _table = _table + "<td class='LeverTraining'>" + item.LeverTraining + "</td>";
+                _table = _table + "<td class='AddressTraining'>" + item.AddressTraining + "</td>";
+                _table = _table + "<td class='Major'>" + item.Major + "</td>";
+                _table = _table + "<td class='JobPosition'>" + item.JobPosition + "</td>";
+                _table = _table + "<td class='WorkUnit'>" + item.WorkUnit + "</td>";
+                _table = _table + "<td class='DateTrial'>" + item.DateTrial + "</td>";
+                _table = _table + "<td class='DateOfficial'>" + item.DateOfficial + "</td>";
+                _table = _table + "<td class='CMT'>" + item.CMT + "</td>";
+                _table = _table + "<td class='Passport'>" + item.Passport + "</td></tr>";
                 $('#tbody').append(_table);
+                sum++;
             })
+            $('#sumList').html(sum);
         },
         fail: function (res) {
             alert("Lấy thất bại");
         }
+
     })
-}
-
-function loadFormAdd() {
-    $('#btnAdd').click(function () {
-        showOrCloseFormAddEmployees('show')
-    });
-
-    $('#btnClose').click(function () {
-        showOrCloseFormAddEmployees('close')
-    });
-
-    setNullItem();
-
-    $('#btnCat').click(function () {
-        debugger;
-        if (checkRequired($('.txtInput2'))) {
-            var arrayString = getInputValue();
-            postDataInput(arrayString);
-        }
-    });
-
-    $('#btnCatThem').click(function () {
-        if (checkRequired($('.txtInput2'))) {
-            var arrayString = getInputValue();
-            postDataInput(postDataInput);
-
-            // Đóng form add và show list nhân viên
-            showOrCloseFormAddEmployees('close');
-            showList();
-        }
-    });
-
-    // Kiểm tra các input bắt buộc nhập khi forcus out
-    $(".txtInput1").blur(function () {
-        checkRequired([$(this)])
-    });
-
-    // Kiểm tra ô tên đã được nhập hay chưa?
-    $(".txtInput1").blur(function () {
-        checkRequiredName($(".txtInput1"));
-    });
-
-    // Kiểm tra mã nhân viên đã tồn tại hay chưa?
-    $("#employeesID").blur(function () {
-        debugger;
-        getEmployeesByID($("#employeesID").val().trim());
-    })
-}
-
-function showOrCloseFormAddEmployees(value) {
-    if (value == 'show') {
-        $('#listEmployees').addClass('hiddenDiv');
-        $('#formAddEmployees').removeClass('hiddenDiv');
-    }
-    if (value == 'close') {
-        $('#listEmployees').removeClass('hiddenDiv');
-        $('#formAddEmployees').addClass('hiddenDiv');
-    }
-}
-
-function setNullItem() {
-    $.each($('.txtInput'), function (index, item) {
-        item.value = '';
-    });
-}
-
-function checkRequired(arrayInputRequired) {
-    var isValid = true;
-    $.each(arrayInputRequired, function (index, item) {
-        if (item.value == '') {
-            $(item).css("border", "1px solid red");
-            $(item).attr("title", "Trường này không được để trống");
-            isValid = false;
+    //Click vào row trong list
+    $('.row-table').click(function () {
+        if ($(this).hasClass('checking')) {
+            $(this).removeClass('checking');
+            $('.box-info-employee').find('.EmployeeCode').html('');
+            $('.box-info-employee').find('.EmployeeName').html('');
+            $('.box-info-employee').find('.gender').html('');
+            $('.box-info-employee').find('.DateOfBirth').html('');
+            $('.box-info-employee').find('.CMT').html('');
+            $('.box-info-employee').find('.Passport').html('');
+            $('.box-info-employee').find('.JobPosition').html('');
+            $('.box-info-employee').find('.WorkUnit').html('');
+            $('.box-info-employee').find('.DateTrial').html('');
         }
         else {
-            $(item).css("border", " 1px solid #ccc");
+            $(this).parent().children('.checking').removeClass('checking');
+            $(this).addClass('checking');
+            $('.box-info-employee').find('.EmployeeCode').html($(this).find('.EmployeeCode').html());
+            $('.box-info-employee').find('.EmployeeName').html($(this).find('.EmployeeName').html());
+            $('.box-info-employee').find('.gender').html($(this).find('.gender').html());
+            $('.box-info-employee').find('.DateOfBirth').html($(this).find('.DateOfBirth').html());
+            $('.box-info-employee').find('.CMT').html($(this).find('.CMT').html());
+            $('.box-info-employee').find('.Passport').html($(this).find('.Passport').html());
+            $('.box-info-employee').find('.JobPosition').html($(this).find('.JobPosition').html());
+            $('.box-info-employee').find('.WorkUnit').html($(this).find('.WorkUnit').html());
+            $('.box-info-employee').find('.DateTrial').html($(this).find('.DateTrial').html());
         }
     });
-    return isValid;
-}
-
-function checkRequiredName(arrayInputRequired) {
-    var count = 0;
-    var name = '';
-    $.each(arrayInputRequired, function (index, item) {
-        debugger;
-        if (item.value == '') {
-            count++;
+    //Xóa
+    $('#btn-del').click(function () {
+        if ($('#tbody').find('.checking').length) {
+            if (confirm('Bạn có chắc muốn xóa nhân viên này?')) {
+                var id = $('#tbody').find('.checking').children('.EmployeeCode').html();
+                $.ajax({
+                    url: "/api/Employee/" + id,
+                    method: "Delete",
+                    data: id,
+                    async: false,
+                    success: function (res) {
+                        alert("Xóa thành công!");
+                    },
+                    fail: function (res) {
+                        alert("Xóa thất bại!");
+                    }
+                });
+            }
+            else {
+                alert("Bạn chọn không");
+            }
         }
         else {
-            name += item.value + " ";
+            alert('Bạn chưa chọn nhân viên!');
         }
-    });
-    debugger;
-    if (count == 2) {
-        $('#name').css("border", " 1px solid #f00");
-        $('#name').attr("title", "Trường này không được để trống");
-        $('#name').val(name.trim());
-    }
-    else {
-        $('#name').css("border", " 1px solid #ccc");
-        $('#name').val(name.trim());
-    }
-}
+    })
 
-function getInputValue() {
-    // lấy dữ liệu nhập vào
-    var ob = new Array();
-    $.each($('.txtInput'), function (index, item) {
-        ob.push(item.value.trim());
-    });
-
-    return ob;
-}
-
-function postDataInput(arrayString) {
-
-    // gửi dữ liệu lên server
-    $.ajax({
-        url: "/api/Employee",
-        method: "POST",
-        data: JSON.stringify(arrayString),
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
-        success: function (res) {
-            if (res == 1) {
-                alert("Thêm thành công");
-            }
-        },
-        fail: function (res) {
-            alert("Thêm không thành công");
+    //Hiện modal sửa
+    $('.row-table').dblclick(function () {
+        $('#update-EmployeeCode').val($(this).find('.EmployeeCode').html());
+        $('#update-EmployeeName').val($(this).find('.EmployeeName').html());
+        if ($(this).find('.gender').html() == 'Nam') {
+            debugger;
+           $('#men').prop('checked', true);
         }
-    });
-}
+        else {
+            debugger;
+            $('#women').prop('checked', true);
+        }
+        var dateOfBirth = $(this).find('.DateOfBirth').text().split("/");
+        $('#update-DateOfBirth').val(dateOfBirth[2] + "-" + dateOfBirth[1] + "-" + dateOfBirth[0]);
+        $('#update-LeverTraining').val($(this).find('.LeverTraining').text());
+        $('#update-AddressTraining').val($(this).find('.AddressTraining').html());
+        $('#update-Major').val($(this).find('.Major').html());
+        $('#update-JobPosition').val($(this).find('.JobPosition').html());
+        $('#update-WorkUnit').val($(this).find('.WorkUnit').html());
+        var dateTrial = $(this).find('.DateTrial').text().split("/");
+        $('#update-DateTrial').val(dateTrial[2] + "-" + dateTrial[1] + "-" + dateTrial[0]);
+        var dateOfficial = $(this).find('.DateOfficial').text().split("/");
+        $('#update-DateOfficial').val(dateOfficial[2] + "-" + dateOfficial[1] + "-" + dateOfficial[0]);
+        $('#update-CMT').val($(this).find('.CMT').html());
+        $('#update-Passport').val($(this).find('.Passport').html());
+        $('#modal-update').modal('show');
+    })
+    //Thực hiện sửa
+    $('#btn-update').click(function () {
 
-function getEmployeesByID(id) {
-    if (id != '') {
-        $("#employeesID").css("border", " 1px solid #ccc");
-        $.ajax({
-            url: "/api/Employee/" + id,
-            method: "GET",
-            dataType: "json",
-            async: false,
-            success: function (res) {
-                debugger;
-                if (res > 0) {
-                    $('#employeesID').focus();
-                    alert("Đã tồn tại mã nhân viên");
-                }
-            },
-            fail: function (res) {
-            }
-        });
-    }
-    else {
-        $("#employeesID").css("border", " 1px solid #f00");
-    }
-}
+
+    })
+
+})

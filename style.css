@@ -149,11 +149,11 @@ input:focus {
     cursor: pointer;
 }
 
-    .button-version:hover {
-        background: white;
-        border: white;
-        color: #0c68b5;
-    }
+.button-version:hover {
+    background: white;
+    border: white;
+    color: #0c68b5;
+}
 
 .header-notify {
     width: 50px;
@@ -163,13 +163,13 @@ input:focus {
     cursor: pointer;
 }
 
-    .header-notify:hover {
-        width: 50px;
-        height: 100%;
-        background: url('../../Images/notification-hover.png') no-repeat;
-        background-position: 3px 4px;
-        cursor: pointer;
-    }
+.header-notify:hover {
+    width: 50px;
+    height: 100%;
+    background: url('../../Images/notification-hover.png') no-repeat;
+    background-position: 3px 4px;
+    cursor: pointer;
+}
 
 .header-user {
     width: 50px;
@@ -194,7 +194,7 @@ input:focus {
 }
 
 .main-menu {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 66px);
     background: #025f97;
     width: 230px;
     color: white;
@@ -211,9 +211,9 @@ input:focus {
     cursor: pointer;
 }
 
-    .menu:hover {
-        background: #eda235 !important;
-    }
+.menu:hover {
+    background: #eda235 !important;
+}
 
 .icon-destop {
     background: url('../../Images/home.png') no-repeat;
@@ -343,12 +343,12 @@ input:focus {
     font-size: 13px;
 }
 
-    .sub-menu-item:hover {
-        background: #eda235 !important;
-    }
-    .sub-menu-2{
-        z-index:100;
-    }
+.sub-menu-item:hover {
+    background: #eda235 !important;
+}
+.sub-menu-2{
+    z-index:100;
+}
 .menu-click {
     background: #eda235 !important;
 }
@@ -377,10 +377,10 @@ input:focus {
     font-size: 13px;
 }
 
-    .sub-item:hover {
-        background: #eda235 !important;
-        color: white !important;
-    }
+.sub-item:hover {
+    background: #eda235 !important;
+    color: white !important;
+}
 
 .menu-sub-time {
     height: calc(100vh - 66px);
@@ -571,10 +571,10 @@ input:focus {
     font-size: 13px;
 }
 
-    .sub-item3:hover {
-        background: #eda235 !important;
-        color: white !important;
-    }
+.sub-item3:hover {
+    background: #eda235 !important;
+    color: white !important;
+}
 
 .langue {
     color: black;
@@ -596,27 +596,28 @@ input:focus {
     position: relative;
 }
 
-    .header-main-content .left-content {
-        min-width: 200px;
-    }
+.header-main-content .left-content {
+    min-width: 200px;
+}
 
-    .header-main-content .right-content {
-        right: 0;
-        top: 0;
-        position: absolute;
-        overflow: hidden;
-        display: flex;
-        bottom: 0;
-        height: 30px;
-    }
+.header-main-content .right-content {
+    right: 0;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    bottom: 0;
+    height: 30px;
+    left: 1040px;
+}
 
-        .header-main-content .right-content select {
-            height: 30px;
-            border-top: none;
-            border-bottom: none;
-            border-right: none;
-            padding: 0 5px;
-        }
+.header-main-content .right-content select {
+    height: 30px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    padding: 0 5px;
+}
 
 .select-company {
     width: 280px;
@@ -640,7 +641,7 @@ input:focus {
 /*main*/
 .main-content {
     position: relative;
-    width: calc(100% - 230px);
+    width: 100%;
 }
 
 .main-right-content {
@@ -658,7 +659,7 @@ input:focus {
     padding: 3px 0px;
     position: relative;
     border-top: 1px solid #d9d9d9;
-    /*width: 100%;*/
+    width: 100%;
     min-width: 400px;
 }
 
@@ -666,16 +667,18 @@ input:focus {
     background: none;
     border: 1px solid #fff;
     margin-right: 10px;
+    padding: 0px 5px;
 }
 
-    .btnToolbar:hover {
-        border-color: #0071c1;
-        background-color: #fff;
-    }
+.btnToolbar:hover {
+    border-color: #0071c1;
+    background-color: #fff;
+    border-radius:3px;
+}
 
-    .btnToolbar span {
-        padding-right: 5px;
-    }
+.btnToolbar span {
+    padding-right: 5px;
+}
 /*table danh sách*/
 .list {
     margin-top: 10px;
@@ -683,7 +686,7 @@ input:focus {
     margin-right: 5px;
     overflow: auto;
     border: 1px solid #ccc;
-    height: 48%;
+    height: 62%;
     min-width: 280px;
 }
 
@@ -692,18 +695,23 @@ th, td {
     border-top: none !important;
 }
 
-    th:first-child,
-    td:first-child {
-        border-left: none !important;
-    }
+th:first-child,
+td:first-child {
+    border-left: none !important;
+}
 
-    th:last-child,
-    td:last-child {
-        border-right: none !important;
-    }
+th:last-child,
+td:last-child {
+    border-right: none !important;
+}
 
 td {
     padding-left: 5px;
+}
+
+#tbody tr:hover,
+.checking {
+    background: #c1ddf1!important;
 }
 /*xét width cột table*/
 .w1 {
@@ -728,15 +736,15 @@ td.box-seach {
     height: 35px;
 }
 
-    .seach select {
-        width: 100%;
-        height: 35px;
-        border: none;
-    }
+.seach select {
+    width: 100%;
+    height: 35px;
+    border: none;
+}
 
-        .seach select:focus {
-            outline: none;
-        }
+.seach select:focus {
+    outline: none;
+}
 /*style khi chọn loại tìm kiếm*/
 .btn-choose {
     color: #000 !important;
@@ -776,23 +784,21 @@ td.box-seach {
     line-height: 23px;
     overflow: hidden;
     padding-left: 3px;
-    border: 1px solid #ccc;
 }
 /*box hiển thị thông tin nhân viên*/
 .box-info-employee {
+    margin-top: 2px;
     background: #fff;
     margin-left: 10px;
     margin-right: 5px;
     overflow: hidden;
-    height: calc(51% - 38px);
-    border: 1px solid #ccc;
-    box-shadow: 2px 5px 11px #66666654;
-    border-radius: 0 0 4px 4px;
+    height: calc(38% - 38px);
 }
 /*tab chọn*/
 .head-box {
     position: relative;
     padding-top: 3px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -803,18 +809,18 @@ td.box-seach {
     background: #fff;
 }
 
-    .head-box-icon span {
-        padding-left: 5px;
-    }
+.head-box-icon span {
+    padding-left: 5px;
+}
 
-    .head-box-icon.icon-left {
-        left: 0px;
-    }
+.head-box-icon.icon-left {
+    left: 0px;
+}
 
-    .head-box-icon.icon-right {
-        right: 0px;
-        padding-right: 5px;
-    }
+.head-box-icon.icon-right {
+    right: 0px;
+    padding-right: 5px;
+}
 
 .menu-tab {
     position: relative;
@@ -836,13 +842,13 @@ td.box-seach {
     width: 1460px;
 }
 
-    .tab .one-tab {
-        padding: 0 5px;
-        margin: 0 10px;
-        float: left;
-        position: relative;
-        cursor: pointer;
-    }
+.tab .one-tab {
+    padding: 0 5px;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
 
 .one-tab.active, .one-tab:hover {
     color: #007bff;
@@ -872,146 +878,36 @@ td.box-seach {
     margin-bottom: 10px;
 }
 
-    .row-info .left-row {
-        width: 100px;
-    }
-
-    .row-info .right-row {
-        font-weight: bold;
-        padding-left: 5px;
-    }
-
-/*End By Ta Dang Tung*/
-/*#endregion */
-/*End list main-content*/
-.form span {
-    color: red;
+.row-info .left-row {
+    width: 100px;
 }
 
-/*Form-header*/
-/*          */
-.form {
-    background-color: white;
-    border: none;
-    width: 1000px;
+.row-info .right-row {
+    font-weight: bold;
+    padding-left: 5px;
 }
 
-.form-header {
-    background: url('../../Images/panel-header-bg.png') no-repeat;
-    background-position: 88% center;
-    text-align: left;
-    color: #157fcc;
-    background-size: 84% 95%;
-    font-size: 16px;
+
+/*modal update*/
+.box-radio {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
 }
 
-/*         */
-.choose-img {
-    position: absolute;
-    top: 140px;
-    width: 120px;
-    line-height: 28px;
-    background-color: #757879;
-    text-align: center;
-    color: #fff;
+.box-radio input {
+    padding-right: 5px;
     cursor: pointer;
 }
 
-.img-more {
-    border: 1px solid #ccc;
-    width: 39px;
-    padding: 5.5px 5px;
-    margin-left: -6px;
-    border-radius: 3px;
-    border-left: none;
+.box-radio label {
+    padding-right: 30px;
+    cursor: pointer;
 }
-
-.form-content {
-    position: relative;
-    display: flex;
-    padding-top: 10px;
-    border-bottom: 1px solid #ccc;
-    margin-top: -5px;
-    padding-left: 15px;
-}
-
-.form-content-information {
-    display: flex;
-    margin-top: 7px;
-}
-
-.c1 {
-    margin-left: 10px;
-    width: 50%;
-    min-width: 300px;
-    overflow: auto;
-}
-
-.c2 {
-    margin-left: -10px;
-    min-width: 300px;
-    overflow: auto;
-}
-
-.address {
-    height: 75px !important;
-}
-
-.birthday {
-    width: 150px !important;
-}
-
-.img-birthday {
-    /*margin-left: -25px;*/
-    background: url('../../Images/date-trigger.png') no-repeat;
-}
-
-.row-info-add {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-    .row-info-add .left-row {
-        width: 120px;
-    }
-
-    .row-info-add .right-row {
-        width: 340px;
-        height: 28px;
-        border: none;
-        /*font-weight: bold;*/
-        padding-left: 5px;
-        border-radius: 3px;
-    }
-
-.right-row input[type=text], select {
-    width: 310px;
-    border: 1px solid #ccc;
-    height: 100%;
-    border-radius: 3px;
-}
-
-.right-row:focus {
-    border: 1px solid #157fcc;
-}
-
-select {
-    -webkit-appearance: none;
-}
-
-.trigger {
-    margin-left: -25px;
-}
-
-.input2 {
-    max-width: 283px !important;
-}
-/*End-Form-header*/
-
-
-.hiddenDiv{
-    display: none;
-}
-.showDiv{
-    display:block;
-}
+/*End By Ta Dang Tung*/
+/*#endregion */
+/*End list main-content*/
