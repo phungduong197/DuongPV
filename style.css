@@ -1,0 +1,1017 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.c-blue {
+    color: #0072bc;
+}
+
+.c-red {
+    color: #dc3545;
+}
+
+.c-grey {
+    color: #c0c0c0;
+}
+
+.display-flex {
+    display: flex;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+/*#region header */
+.header {
+    height: 50px;
+    width: 100%;
+    background: #0277bd;
+    color: white;
+    display: flex;
+}
+/*#region header left */
+
+.header-left {
+    display: flex;
+    width: 260px;
+    padding-left: 6px;
+    /* padding-top: 12px; */
+}
+
+.icon-header {
+    background: url(https://newcdnamis2.amis.vn/AMISHRM2/Content/Master/image/category.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    width: 30px;
+    min-width: 30px;
+    height: 100%;
+    cursor: pointer;
+    background-position: 0px 19px;
+    padding-left: 0 !important;
+}
+
+.header-logo {
+    background: url('../../Images/logo.png') no-repeat;
+    background-position: 0 12px;
+    width: 190px;
+    margin-left: 4px;
+    height: 100%;
+    padding-top: 16px;
+    color: #fff;
+    box-shadow: 2px 0 4px RGBA(0,0,0,.2);
+    -webkit-box-shadow: 2px 0 4px RGBA(0,0,0,.2);
+    -moz-box-shadow: 2px 0 4px RGBA(0,0,0,.2);
+}
+
+/*#endregion */
+
+/*#region header center */
+
+.header-center {
+    display: flex;
+}
+
+.icon-muti {
+    background: url(https://newcdnamis2.amis.vn/AMISHRM2/Content/Master/image/app-icon.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 17px -9px;
+}
+
+.menu-muti {
+    width: 360px;
+    height: 492px;
+    background: #fff !important;
+    position: absolute;
+}
+
+.header-center .header-search {
+    display: flex;
+}
+
+.header-search {
+    background: #0a5796 url(https://newcdnamis2.amis.vn/AMISHRM2/Content/Master/image/search.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    background-position: 10px 7px;
+    position: relative;
+    height: 32px;
+    margin: 9px 30px;
+    border: 1px solid #0a5796;
+    border-radius: 3px;
+    min-width: 226px;
+    max-width: 390px;
+}
+
+.header-center .input-search {
+    background: #0a5796;
+    border: none;
+    width: 306px;
+}
+
+.header-icon-setting {
+    height: 26px;
+    width: 40px;
+    background: url('../../Images/qs-setting.png') no-repeat;
+    background-position: 11px 4px;
+    border-left: 1px solid #fff;
+    margin: 1px 0;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+    font-size: 13px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*#endregion */
+
+/*#region header right */
+
+.header-right {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+
+.button-version {
+    height: 32px;
+    width: 182px;
+    border: 1px solid #3e85c3;
+    background: #0b62a9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .button-version:hover {
+        background: white;
+        border: white;
+        color: #0c68b5;
+    }
+
+.header-notify {
+    width: 50px;
+    height: 100%;
+    background: url('../../Images/notification.png') no-repeat;
+    background-position: 3px 4px;
+    cursor: pointer;
+}
+
+    .header-notify:hover {
+        width: 50px;
+        height: 100%;
+        background: url('../../Images/notification-hover.png') no-repeat;
+        background-position: 3px 4px;
+        cursor: pointer;
+    }
+
+.header-user {
+    width: 50px;
+    height: 100%;
+    background: url('../../Images/ImageHandler.png') no-repeat;
+    background-position: 2px 0px;
+}
+
+.account-name {
+    font-size: 14px;
+    line-height: 31px;
+}
+
+/*#endregion */
+
+/*#endregion */
+
+/*#region content */
+/*#region mainmenu */
+.content {
+    display: flex;
+}
+
+.main-menu {
+    height: calc(100vh - 50px);
+    background: #025f97;
+    width: 230px;
+    color: white;
+    font-size: 14px;
+}
+
+.menu {
+    width: 230px;
+    height: 35px;
+    display: flex;
+    line-height: 36px;
+    border: 1px solid #038ac1;
+    background: #0277bd !important;
+    cursor: pointer;
+}
+
+    .menu:hover {
+        background: #eda235 !important;
+    }
+
+.icon-destop {
+    background: url('../../Images/home.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 3px;
+}
+
+.icon-profile {
+    background: url('../../Images/profile.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 4px;
+}
+
+.icon-tax {
+    background: url('../../Images/salary.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 3px;
+}
+
+.icon-receive {
+    background: url('../../Images/recruitment.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 3px;
+}
+
+.icon-bonus {
+    background: url('../../Images/accomplishment.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 5px;
+}
+
+.icon-evaluate {
+    background: url('../../Images/train.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 5px;
+}
+
+.icon-procedure {
+    background: url('../../Images/procedure.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 5px;
+}
+
+.icon-report {
+    background: url('../../Images/report.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 5px;
+}
+
+.icon-catagory {
+    background: url('../../Images/dictionary.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 5px;
+}
+
+.icon-system {
+    background: url('../../Images/task.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 5px;
+}
+
+.icon-contact {
+    background: url('../../Images/contact.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 4px 8px;
+}
+
+.icon-report-faster {
+    background: url('../../Images/menu-quick-report.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 5px;
+}
+
+.icon-trash {
+    background: url('../../Images/delete-24.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 3px;
+}
+
+.icon-utilities {
+    background: url('../../Images/utility.png') no-repeat;
+    width: 30px;
+    height: 100%;
+    background-position: 2px 3px;
+}
+
+.main-menu span {
+    padding-right: 3px;
+    width: 174px;
+}
+
+.menu-arrow-down {
+    background: transparent url(https://newcdnamis2.amis.vn/AMISHRM2/Content/Master/image/arr-down.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    height: 35px;
+    width: 43px;
+    background-position: 19px center;
+}
+
+.menu-icon-sub {
+    background: transparent url(https://newcdnamis2.amis.vn/AMISHRM2/Content/Master/image/arr-right.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    height: 35px;
+    width: 43px;
+    background-position: 19px center;
+}
+
+.sub-menu-item {
+    width: 100%;
+    height: 35px;
+    line-height: 36px;
+    border: 1px solid #038ac1;
+    background: #025f97 !important;
+    cursor: pointer;
+    padding-left: 47px;
+    font-size: 13px;
+}
+
+    .sub-menu-item:hover {
+        background: #eda235 !important;
+    }
+    .sub-menu-2{
+        z-index:100;
+    }
+.menu-click {
+    background: #eda235 !important;
+}
+
+.menu-arrow-up {
+    background: transparent url(https://newcdnamis2.amis.vn/AMISHRM2/Content/Master/image/arr-up.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    height: 35px;
+    width: 43px;
+    background-position: 19px center;
+}
+
+.menu-icon-sub1 {
+    background: transparent url(https://newcdnamis2.amis.vn/AMISHRM2/Content/Master/image/arr-right.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    background-position: 16px center;
+    height: 35px;
+    width: 43px;
+}
+
+.sub-item {
+    height: 34px;
+    width: 100%;
+    color: black !important;
+    line-height: 34px;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+    .sub-item:hover {
+        background: #eda235 !important;
+        color: white !important;
+    }
+
+.menu-sub-time {
+    height: calc(100vh - 66px);
+    width: 280px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.menu-sub-timekeeping {
+    height: calc(100vh - 66px);
+    width: 280px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.menu-sub-salary {
+    height: calc(100vh - 66px);
+    width: 280px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.menu-sub-tax {
+    height: calc(100vh - 66px);
+    width: 332px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.menu-sub-insurrance {
+    height: calc(100vh - 66px);
+    width: 280px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.menu-sub-receive {
+    height: calc(100vh - 66px);
+    width: 280px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.menu-sub-educate {
+    height: calc(100vh - 66px);
+    width: 280px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.sub-menu-report {
+    height: calc(100vh - 66px);
+    width: 472px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.menu-sub-system {
+    height: calc(100vh - 66px);
+    width: 279px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+    padding: 5px 0 0 0;
+}
+
+.sub-item1 {
+    background: transparent url(https://cdnamis2.amis.vn/AMISHRM2/Content/Master/image/tree-node-bg.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat 19px center;
+    padding-left: 32px;
+}
+
+.item-sub {
+    width: 189px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    padding-left: 9px;
+}
+
+.item-sub1 {
+    width: 228px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    padding-left: 9px;
+}
+
+    .item-sub1:hover {
+        background-color: #eda235;
+        color: #fff;
+    }
+
+.item-sub:hover {
+    background-color: #eda235;
+    color: #fff;
+}
+
+.sub-group {
+    margin-top: 8px;
+}
+
+.sub-menu-catalog {
+    height: calc(100vh - 66px);
+    width: 472px;
+    -webkit-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    box-shadow: 10px 0px 41px -6px rgba(0,0,0,1);
+    position: absolute;
+    top: 50px;
+    left: 230px;
+    background: white !important;
+}
+
+.select-langue {
+    height: 34px;
+    width: 232px;
+    border-radius: 0px !important;
+    -webkit-appearance: none;
+    background: url(https://cdnamis2.amis.vn/AMISHRM2/Content/Master/image/arr-down-black.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    border: 1px solid #b0bec5 !important;
+    color: black;
+    border: 0;
+    position: absolute;
+    background-position: 99% 50%;
+    padding-left: 41px;
+    line-height: 34px;
+}
+
+.langue-vietnam {
+    background: url(https://cdnamis2.amis.vn/AMISHRM2/Content/Master/image/vietnam24.png?v=sa1bF5pkPc03qeYdWQDxRg6opEg=) no-repeat;
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    background-position: 10px center;
+}
+
+.sub-item3 {
+    height: 34px;
+    width: 100%;
+    color: black !important;
+    line-height: 34px;
+    padding-left: 13px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+    .sub-item3:hover {
+        background: #eda235 !important;
+        color: white !important;
+    }
+
+.langue {
+    color: black;
+    height: 34px;
+    line-height: 40px;
+    padding-left: 12px;
+}
+/*#endregion */
+
+/*#endregion */
+/**/
+/**/
+/*Author: Ta Dang Tung*/
+/*main-content: list*/
+.header-main-content {
+    padding-top: 3px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+    .header-main-content .left-content {
+        min-width: 200px;
+    }
+
+    .header-main-content .right-content {
+        right: 0;
+        top: 0;
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        bottom: 0;
+        height: 30px;
+    }
+
+        .header-main-content .right-content select {
+            height: 30px;
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            padding: 0 5px;
+        }
+
+.select-company {
+    width: 280px;
+}
+
+.select-status {
+    width: 180px;
+}
+/*đường dẫn danh mục*/
+.parent-category {
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.category {
+    padding-left: -5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*main*/
+.main-content {
+    position: relative;
+    width: calc(100% - 230px);
+}
+
+.main-right-content {
+    background: #ededed;
+    position: absolute;
+    top: 56px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border: 1px solid #d9d9d9;
+}
+/*Toolbar*/
+.tool-bar {
+    margin-left: 10px;
+    padding: 3px 0px;
+    position: relative;
+    border-top: 1px solid #d9d9d9;
+    /*width: 100%;*/
+    min-width: 400px;
+}
+
+.btnToolbar {
+    background: none;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+    .btnToolbar:hover {
+        border-color: #0071c1;
+        background-color: #fff;
+    }
+
+    .btnToolbar span {
+        padding-right: 5px;
+    }
+/*table danh sách*/
+.list {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    height: 48%;
+    min-width: 280px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    border-top: none !important;
+}
+
+    th:first-child,
+    td:first-child {
+        border-left: none !important;
+    }
+
+    th:last-child,
+    td:last-child {
+        border-right: none !important;
+    }
+
+td {
+    padding-left: 5px;
+}
+/*xét width cột table*/
+.w1 {
+    min-width: 80px;
+}
+
+.w2 {
+    min-width: 120px;
+}
+
+.w3 {
+    min-width: 170px;
+}
+/*Box seach in table*/
+td.box-seach {
+    padding: 0 !important;
+    height: 35px;
+}
+
+.seach {
+    width: 100%;
+    height: 35px;
+}
+
+    .seach select {
+        width: 100%;
+        height: 35px;
+        border: none;
+    }
+
+        .seach select:focus {
+            outline: none;
+        }
+/*style khi chọn loại tìm kiếm*/
+.btn-choose {
+    color: #000 !important;
+    padding: 7px 4px;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+    margin: 0px;
+    width: 26px;
+    border-right: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.btn-star:hover {
+    border-color: #fd7e14;
+}
+/*Màu row trong danh sách*/
+.row-grey {
+    background: #f5f5f5;
+}
+
+.row-white {
+    background: #ffffff;
+}
+/*Kết thúc bảng*/
+/**/
+.sum-list {
+    margin-top: 2px;
+    background: #fff;
+    margin-left: 10px;
+    margin-right: 5px;
+    line-height: 23px;
+    overflow: hidden;
+    padding-left: 3px;
+    border: 1px solid #ccc;
+}
+/*box hiển thị thông tin nhân viên*/
+.box-info-employee {
+    background: #fff;
+    margin-left: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+    height: calc(51% - 38px);
+    border: 1px solid #ccc;
+    box-shadow: 2px 5px 11px #66666654;
+    border-radius: 0 0 4px 4px;
+}
+/*tab chọn*/
+.head-box {
+    position: relative;
+    padding-top: 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+.head-box-icon {
+    position: absolute;
+    line-height: 20px;
+    z-index: 1;
+    background: #fff;
+}
+
+    .head-box-icon span {
+        padding-left: 5px;
+    }
+
+    .head-box-icon.icon-left {
+        left: 0px;
+    }
+
+    .head-box-icon.icon-right {
+        right: 0px;
+        padding-right: 5px;
+    }
+
+.menu-tab {
+    position: relative;
+    width: 2000px;
+}
+
+.content-tab {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+}
+
+.tab {
+    position: absolute;
+    left: 20px;
+    right: 70px;
+    line-height: 20px;
+    width: 1460px;
+}
+
+    .tab .one-tab {
+        padding: 0 5px;
+        margin: 0 10px;
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+
+.one-tab.active, .one-tab:hover {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+    font-weight: bold;
+}
+/*Thông tin nhân viên*/
+.content-box {
+    position: relative;
+    padding-top: 10px;
+}
+
+.col1 {
+    margin-left: 10px;
+    width: 50%;
+    min-width: 300px;
+    overflow: auto;
+}
+
+.col2 {
+    min-width: 300px;
+    overflow: auto;
+}
+
+.row-info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+    .row-info .left-row {
+        width: 100px;
+    }
+
+    .row-info .right-row {
+        font-weight: bold;
+        padding-left: 5px;
+    }
+
+/*End By Ta Dang Tung*/
+/*#endregion */
+/*End list main-content*/
+.form span {
+    color: red;
+}
+
+/*Form-header*/
+/*          */
+.form {
+    background-color: white;
+    border: none;
+    width: 1000px;
+}
+
+.form-header {
+    background: url('../../Images/panel-header-bg.png') no-repeat;
+    background-position: 88% center;
+    text-align: left;
+    color: #157fcc;
+    background-size: 84% 95%;
+    font-size: 16px;
+}
+
+/*         */
+.choose-img {
+    position: absolute;
+    top: 140px;
+    width: 120px;
+    line-height: 28px;
+    background-color: #757879;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.img-more {
+    border: 1px solid #ccc;
+    width: 39px;
+    padding: 5.5px 5px;
+    margin-left: -6px;
+    border-radius: 3px;
+    border-left: none;
+}
+
+.form-content {
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-top: -5px;
+    padding-left: 15px;
+}
+
+.form-content-information {
+    display: flex;
+    margin-top: 7px;
+}
+
+.c1 {
+    margin-left: 10px;
+    width: 50%;
+    min-width: 300px;
+    overflow: auto;
+}
+
+.c2 {
+    margin-left: -10px;
+    min-width: 300px;
+    overflow: auto;
+}
+
+.address {
+    height: 75px !important;
+}
+
+.birthday {
+    width: 150px !important;
+}
+
+.img-birthday {
+    /*margin-left: -25px;*/
+    background: url('../../Images/date-trigger.png') no-repeat;
+}
+
+.row-info-add {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+    .row-info-add .left-row {
+        width: 120px;
+    }
+
+    .row-info-add .right-row {
+        width: 340px;
+        height: 28px;
+        border: none;
+        /*font-weight: bold;*/
+        padding-left: 5px;
+        border-radius: 3px;
+    }
+
+.right-row input[type=text], select {
+    width: 310px;
+    border: 1px solid #ccc;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.right-row:focus {
+    border: 1px solid #157fcc;
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+.trigger {
+    margin-left: -25px;
+}
+
+.input2 {
+    max-width: 283px !important;
+}
+/*End-Form-header*/
+
+
+.hiddenDiv{
+    display: none;
+}
+.showDiv{
+    display:block;
+}

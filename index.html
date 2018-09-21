@@ -1,0 +1,1183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <!--<link href="../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/css/bootstrap.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="../Content/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <div id="icon-menu" class="icon-header"></div>
+            <a class="header-logo"></a>
+        </div>
+        <div class="header-center">
+            <div>
+                <div class="icon-muti"></div>
+                <div class="menu-muti">
+
+                </div>
+            </div>
+            <div class="header-search">
+                <div style="width: 439px; display: flex; padding: 1px 41px">
+                    <div style="padding: 4px 0;">
+                        <input class="input-search" type="text" name="name" value="" placeholder="Tìm kiếm nhanh..." />
+                    </div>
+                    <div class="header-icon-setting"></div>
+                </div>
+            </div>
+        </div>
+        <!--<div style="width: calc(100% - 1218px)"></div>-->
+        <div class="header-right">
+            <div>
+                <div class="button-version"><span style="padding: 0 15px; line-height: 31px;">Làm việc với phiên bản cũ</span></div>
+            </div>
+
+            <div style="width: 46px"></div>
+
+            <div style="display: flex">
+                <div style="line-height: 30px; width: 75px;">
+                    <span style="font-size: 15px;">R22.21</span>
+                </div>
+                <div style="display: flex;">
+                    <div class="header-notify"></div>
+                    <div style="display: flex; cursor: pointer;">
+                        <div class="header-user"></div>
+                        <div class="account-name">Nhóm 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="main-menu">
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-destop menu">
+                        <div class="icon-destop"></div>
+                        <span>Bàn làm việc</span>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; border-top: 1px solid #016087;">
+                        <div class="menu-profile menu sup-menu">
+                            <div class="icon-profile"></div>
+                            <span>Hồ sơ nhân viên</span>
+                            <div class="menu-arrow-down"></div>
+                        </div>
+
+                    </div>
+                    <div class="sub-menu sub-menu-profile">
+                        <div class="sub-menu-item">Hồ sơ</div>
+                        <div class="sub-menu-item">Hợp đồng</div>
+                        <div class="sub-menu-item">Nhân viên tự cập nhật</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-tax menu sup-menu">
+                        <div class="icon-tax"></div>
+                        <span>Lương - Thuế - Bảo hiểm</span>
+                        <div class="icon-arrow menu-arrow-down"></div>
+                    </div>
+                </div>
+                <div class="sub-menu sub-menu-tax">
+                    <!--  -->
+                    <div style="display: flex;" class="sub-menu-item" id="sub-time-manager">
+                        <span>Quản lý thời gian</span>
+                        <div class="menu-icon-sub1"></div>
+                    </div>
+                    <div class="menu-sub-time sub-menu-2">
+                        <div class="sub-item">Quản lý nghỉ</div>
+                        <div class="sub-item">Quản lý làm thêm</div>
+                        <div class="sub-item">Quản lý đi muộn, về sớm</div>
+                        <div class="sub-item">Quản lý làm bù</div>
+                        <div class="sub-item">Bảng tổng hợp nghỉ phép</div>
+                    </div>
+                    <!--  -->
+                    <div style="display: flex;" class="sub-menu-item" id="sub-time-keeping">
+                        <span>Châm công</span>
+                        <div class="menu-icon-sub1"></div>
+                    </div>
+                    <div class="menu-sub-timekeeping sub-menu-2">
+                        <div class="sub-item">Chấm công chi tiết theo thời gian</div>
+                        <div class="sub-item">Chấm công tổng hợp theo thời gian</div>
+                    </div>
+                    <!--  -->
+                    <div style="display: flex;" class="sub-menu-item" id="sub-time-salary">
+                        <span>Lương</span>
+                        <div class="menu-icon-sub1"></div>
+                    </div>
+                    <div class="menu-sub-salary sub-menu-2">
+                        <div class="sub-item">Bảng lương</div>
+                        <div class="sub-item">Bảng tổng hợp công nợ</div>
+                        <div class="sub-item">Bảng chi trả tiền tiền lương</div>
+                        <div class="sub-item">Bảng tạm ghi nợ nhân viên</div>
+                        <div class="sub-item">Bảng tổng hợp ghi nợ nhân viên</div>
+                        <div class="sub-item">Bảng thu nhập khác</div>
+                        <div class="sub-item">Bảng khấu trừ khác</div>
+                    </div>
+                    <!--  -->
+                    <div style="display: flex;" class="sub-menu-item" id="sub-time-tax">
+                        <span>Thuế</span>
+                        <div class="menu-icon-sub1"></div>
+                    </div>
+                    <div class="menu-sub-tax sub-menu-2">
+                        <div class="sub-item">Tạm tính thuế</div>
+                        <div class="sub-item">Quyết toán thuế</div>
+                        <div class="sub-item">Tờ khai quyết toán thuế</div>
+                        <div class="sub-item">Tờ khai đăng ký mã số thuế TNCN</div>
+                        <div class="sub-item">Bảng kê đăng ký người phụ thuộc giảm trừ gia cảnh</div>
+                    </div>
+                    <!--  -->
+                    <div style="display: flex;" class="sub-menu-item" id="sub-time-insurrance">
+                        <span>Bảo hiểm</span>
+                        <div class="menu-icon-sub1"></div>
+                    </div>
+                    <div class="menu-sub-insurrance sub-menu-2">
+                        <div class="sub-item">Đợt bảo hiểm</div>
+                        <div class="sub-item">Thanh toán bảo hiểm</div>
+                        <div class="sub-item">Hồ sơ bảo hiểm</div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-receive menu sup-menu">
+                        <div class="icon-receive"></div>
+                        <span>Tuyển dụng - Tiếp nhận</span>
+                        <div class="menu-arrow-down"></div>
+                    </div>
+                </div>
+                <div class="sub-menu sub-menu-receive">
+                    <!--  -->
+                    <div style="display: flex;" class="sub-menu-item" id="sub-time-receive">
+                        <span>Tuyển dụng</span>
+                        <div class="menu-icon-sub1"></div>
+                    </div>
+
+                    <div class="menu-sub-receive sub-menu-2">
+                        <div class="sub-item">Kế hoạch tuyển dụng</div>
+                        <div class="sub-item">Đợt tuyển dụng</div>
+                        <div class="sub-item">Nguồn dự trữ</div>
+                        <div class="sub-item">Hồ sơ vãng lai</div>
+                    </div>
+                    <!--  -->
+                    <div class="sub-menu-item">Tiếp nhận</div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-bonus menu sup-menu">
+                        <div class="icon-bonus"></div>
+                        <span>Khen thưởng - Sự cố</span>
+                        <div class="menu-arrow-down"></div>
+                    </div>
+                </div>
+                <div class="sub-menu-bonus sub-menu">
+                    <div class="sub-menu-item">Khen thưởng</div>
+                    <div class="sub-menu-item">Sự cố</div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-evaluate menu sup-menu">
+                        <div class="icon-evaluate"></div>
+                        <span style="display: block; font-size: 12px;">Đánh giá - Đào tạo - Phúc lợi</span>
+                        <div class="menu-arrow-down"></div>
+                    </div>
+                </div>
+                <div class="sub-menu-evaluate sub-menu">
+                    <div class="sub-menu-item">Đánh giá</div>
+                    <div>
+                        <div style="display: flex;" class="sub-menu-item" id="sub-time-educate">
+                            <span>Đào tạo</span>
+                            <div class="menu-icon-sub1"></div>
+                        </div>
+                        <div class="menu-sub-educate sub-menu-2">
+                            <div class="sub-item">Tổng hợp nhu cầu đào tạo</div>
+                            <div class="sub-item">Kế hoạch đào tạo</div>
+                            <div class="sub-item">Khóa đào tạo</div>
+                        </div>
+                    </div>
+                    <div class="sub-menu-item">Phúc lợi</div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-procedure menu sup-menu">
+                        <div class="icon-procedure"></div>
+                        <span>Thủ tục</span>
+                        <div class="menu-arrow-down"></div>
+                    </div>
+                </div>
+                <div class="sub-menu-procedure sub-menu">
+                    <div class="sub-menu-item">Công tác</div>
+                    <div class="sub-menu-item">Đồng phục và bảo hộ</div>
+                    <div class="sub-menu-item">Thôi việc</div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-report menu sup-menu">
+                        <div class="icon-report"></div>
+                        <span>Báo cáo</span>
+                        <div class="menu-icon-sub"></div>
+                    </div>
+                </div>
+                <div class="sub-menu-report sub-menu-2" style="color: black; font-size: 13px;">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="sub-group">
+                                <div style="color: #0277bd; padding: 6px 0 0 16px;">Hồ sơ nhân viên</div>
+                                <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Hồ sơ</div></div>
+                                <div class="sub-item1 "><div class="item-sub">Hợp đồng</div></div>
+                            </div>
+                            <div class="sub-group">
+                                <div style="color: #0277bd; padding: 6px 0 0 16px;">Lương - Thuế - Bảo hiểm</div>
+                                <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Quản lý thời gian</div></div>
+                                <div class="sub-item1"><div class="item-sub">Chấm công</div></div>
+                                <div class="sub-item1"><div class="item-sub">Tiền lương</div></div>
+                                <div class="sub-item1"><div class="item-sub">Thuế</div></div>
+                                <div class="sub-item1"><div class="item-sub">Bảo hiểm</div></div>
+                            </div>
+                            <div class="sub-group">
+                                <div style="color: #0277bd; padding: 6px 0 0 16px;">Tuyển dụng - Tiếp nhận</div>
+                                <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Tuyển dụng</div></div>
+                                <div class="sub-item1"><div class="item-sub">Tiếp nhận</div></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="sub-group">
+                                <div style="color: #0277bd; padding: 6px 0 0 16px;">Khen thưởng - Sự cố</div>
+                                <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Khen thưởng</div></div>
+                                <div class="sub-item1 "><div class="item-sub">Sự cố</div></div>
+                            </div>
+                            <div class="sub-group">
+                                <div style="color: #0277bd; padding: 6px 0 0 16px;">Đánh giá - Đào tạo - Phúc lợi</div>
+                                <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Đánh giá</div></div>
+                                <div class="sub-item1"><div class="item-sub">Đào tạo</div></div>
+                                <div class="sub-item1"><div class="item-sub">Phúc lợi</div></div>
+                            </div>
+                            <div class="sub-group">
+                                <div style="color: #0277bd; padding: 6px 0 0 16px;">Thủ tục</div>
+                                <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Công tác</div></div>
+                                <div class="sub-item1"><div class="item-sub">Đồng phục và bảo hộ lao động</div></div>
+                                <div class="sub-item1"><div class="item-sub">Thôi việc</div></div>
+                            </div>
+                            <div class="sub-group">
+                                <div style="color: #0277bd; padding: 6px 0 0 16px;">Hồ sơ năng lực</div>
+                                <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Hồ sơ năng lực</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-catagory menu sup-menu">
+                        <div class="icon-catagory"></div>
+                        <span>Danh mục</span>
+                        <div class="menu-icon-sub"></div>
+                    </div>
+                    <div class="sub-menu-catalog sub-menu-2" style="color: black; font-size: 13px;">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="sub-group">
+                                    <div style="color: #0277bd; padding: 6px 0 0 16px;">Công việc</div>
+                                    <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Cơ cấu tổ chức</div></div>
+                                    <div class="sub-item1 "><div class="item-sub">Vị trí công việc</div></div>
+                                    <div class="sub-item1 "><div class="item-sub">Vai trò công việc</div></div>
+                                </div>
+                                <div class="sub-group">
+                                    <div style="color: #0277bd; padding: 6px 0 0 16px;">Lương</div>
+                                    <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Khoản lương</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Lý do nghỉ</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Ký hiệu chấm công</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Ca làm việc</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Sản phẩm</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Ngạch bậc lương</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Biểu tính thuế thu nhập</div></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="sub-group">
+                                    <div style="color: #0277bd; padding: 6px 0 0 16px;">Khác</div>
+                                    <div class="sub-item1"><div class="item-sub" style="margin-top: 8px;">Nhà cung cấp</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Đồng phục và bảo hộ lao động</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Cấp độ</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Kỹ năng</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Tiêu chí đánh giá</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Thủ tục</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Nơi đăng ký khám chữa bệnh</div></div>
+                                    <div class="sub-item1"><div class="item-sub">Thiết lập mẫu trộn</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-system menu sup-menu">
+                        <div class="icon-system"></div>
+                        <span>Hệ thống</span>
+                        <div class="menu-icon-sub"></div>
+                    </div>
+                    <div class="menu-sub-system sub-menu-2">
+                        <div>
+                            <div class="langue">Ngôn ngữ</div>
+                            <div style="display:flex; padding-left: 12px;">
+                                <div class="langue-vietnam"></div>
+                                <select class="select-langue" name="langue" style="">
+                                    <option>Tiếng việt</option>
+                                </select>
+                            </div>
+                            <div style="margin-top: 45px;">
+                                <div class="sub-item3">Quản lý người dùng</div>
+                                <div class="sub-item3">Vai trò và quyền hạn</div>
+                                <div class="sub-item3">Nhật ký truy cập</div>
+                                <div class="sub-item3">Thiết lập giá trị ngầm định</div>
+                            </div>
+
+                        </div>
+                        <div style="height: 261px; background:#eceff1;">
+                            <div style="color: black; height: 57px; line-height: 57px;padding-left: 13px; font-size: 13px;">Thiết lập chung</div>
+                            <div style="color: black; font-size: 13px;">
+                                <div style="display:flex;">
+                                    <div class="sub-item1"></div>
+                                    <div class="item-sub1">Chọn người dùng quản lý thời gian</div>
+                                </div>
+                                <div style="display:flex;">
+                                    <div class="sub-item1"></div>
+                                    <div class="item-sub1">Thiết lập ca làm việc</div>
+                                </div>
+                                <div style="display:flex;">
+                                    <div class="sub-item1"></div>
+                                    <div class="item-sub1">Thiết lập ngày nghỉ</div>
+                                </div>
+                                <div style="display:flex;">
+                                    <div class="sub-item1"></div>
+                                    <div class="item-sub1">Thiết lập số công chuẩn</div>
+                                </div>
+                                <div style="display:flex;">
+                                    <div class="sub-item1"></div>
+                                    <div class="item-sub1">Thiết lập số kỳ lương trong tháng</div>
+                                </div>
+                                <div style="display:flex;">
+                                    <div class="sub-item1"></div>
+                                    <div class="item-sub1">Chọn người dùng quản lý đi công tác</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-item3">Thiết lập trường bắt buộc lập dữ liệu...</div>
+                        <div class="sub-item3">Tùy chọn...</div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-contact menu">
+                        <div class="icon-contact"></div>
+                        <span>Danh bạ</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-report-faster menu">
+                        <div class="icon-report-faster"></div>
+                        <span>Báo cáo nhanh</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-trash menu">
+                        <div class="icon-trash"></div>
+                        <span>Thùng rác</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; border-top: 1px solid #016087;">
+                    <div class="menu-utilities menu sup-menu">
+                        <div class="icon-utilities"></div>
+                        <span>Tiện ích</span>
+                        <div class="menu-arrow-down"></div>
+                    </div>
+                </div>
+                <div class="sub-menu-utilities sub-menu">
+                    <div class="sub-menu-item">Lịch sử email</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Author: Tạ Đăng Tùng -->
+        <!-- Nội dung: Danh sách hiển thị thông tin nhân viên -->
+        <!--Main-content-->
+        <div id="listEmployees" class="main-content">
+            <div class="header-main-content display-flex">
+                <div class="left-content">
+                    <span class="parent-category c-blue">Hồ sơ nhân viên</span>
+                    <span class="glyphicon glyphicon-menu-right c-grey"></span>
+                    <span class="category">Hồ sơ</span>
+                </div>
+                <div class="right-content">
+                    <div class="">
+                        <select name="" class="select-company">
+                            <option value="">Công ty cổ phần MISA</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <select name="" class="select-status">
+                            <option value="">Đang làm việc</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-bar">
+                <button class="btnToolbar" id="btnAdd"><span class="glyphicon glyphicon-plus c-blue"></span>Thêm</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-duplicate c-blue"></span>Nhân bản</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-edit c-blue"></span>Sửa</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-remove c-red"></span>Xóa</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-refresh c-blue"></span>Nạp</button>
+            </div>
+            <div class="main-right-content">
+                <div class="list">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="code w2 ">Mã nhân viên</th>
+                                <th class="name w3 ">Họ và tên</th>
+                                <th class="gender w1">Giới tính</th>
+                                <th class="date-of-birth w2">Ngày sinh</th>
+                                <th class="level w2">Trình độ đào tạo</th>
+                                <th class="school w3">Nơi đào tạo</th>
+                                <th class="major w3">Chuyên ngành</th>
+                                <th class="job-position w3">Vị trí công việc</th>
+                                <th class="word-unit w3">Đơn vị công tác</th>
+                                <th class="date-trail w2">Ngày thử việc</th>
+                                <th class="date-official w2">Ngày chính thức</th>
+                                <th class="cmt w3">Số CMND/Thẻ căn cước</th>
+                                <th class="stop-follow col-end w2">Hộ chiếu</th>
+                            </tr>
+                            <tr>
+                                <td class="code w2 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="name w3 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="gender w1 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="date-of-birth box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="level w2 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="school w3 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="major w3 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="job-position w3 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="word-unit w3 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="debt box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="date-official box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="cmt w2 box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                                <td class="stop-follow box-seach">
+                                    <div class="display-flex seach">
+                                        <a class="btn btn-choose">*</a>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <!--<div class="dropdown-icon-choose">
+                                    <div class="display-flex row-choose checked">
+                                        <div class="glyphicon glyphicon-ok icon-choose"></div>
+                                        <div><span class="icons">*</span> : Chứa</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class="icon-choose"></div>
+                                        <div><span class="icons">=</span> : Bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">+</span> : Bắt đầu bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">-</span> : Kết thúc bằng</div>
+                                    </div>
+                                    <div class="display-flex row-choose">
+                                        <div class=" icon-choose"></div>
+                                        <div><span class="icons">!</span> : Không chứa</div>
+                                    </div>
+                                </div>-->
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+                <div class="sum-list">Tổng số: <b>280</b> bản ghi</div>
+                <div class="box-info-employee">
+                    <div class="head-box">
+                        <div href="" class="head-box-icon icon-left c-grey"><span class="glyphicon glyphicon-triangle-left"></span></div>
+                        <div href="" class="head-box-icon icon-right c-blue">
+                            <span class="glyphicon glyphicon-triangle-right"></span>
+                            <span class="glyphicon glyphicon-option-horizontal"></span>
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </div>
+                        <div class="menu-tab">
+                            <div class="content-tab">
+                                <div class="tab">
+                                    <div class="one-tab active">1.THÔNG TIN CHUNG</div>
+                                    <div class="one-tab">2.THÔNG TIN LIÊN HỆ</div>
+                                    <div class="one-tab">3.GIA ĐÌNH</div>
+                                    <div class="one-tab">4.HỢP ĐỒNG LAO ĐỘNG</div>
+                                    <div class="one-tab">5.QUÁ TRÌNH CÔNG TÁC</div>
+                                    <div class="one-tab">6.THU NHẬP THƯỜNG XUYÊN</div>
+                                    <div class="one-tab">7.KHẤU TRỪ THƯỜNG XUYÊN</div>
+                                    <div class="one-tab">8.LỊCH SỬ LƯƠNG</div>
+                                    <div class="one-tab">9.LƯƠNG TH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-box display-flex">
+                        <div>
+                            <img src="../Images/ImageHandler1.png" alt="">
+                        </div>
+                        <div class="display-flex">
+                            <div class="col1">
+                                <div class="row-info">
+                                    <div class="left-row">Mã nhân viên</div>
+                                    <div class="right-row">NCV000001</div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="left-row">Họ và tên</div>
+                                    <div class="right-row">Lê Thị Dưa</div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="left-row">Giới tính</div>
+                                    <div class="right-row">Nữ</div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="left-row">Ngày sinh</div>
+                                    <div class="right-row">01/01/1999</div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="left-row">Số CMND/Thẻ căn cước</div>
+                                    <div class="right-row">1234567974</div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="left-row">Hộ chiếu</div>
+                                    <div class="right-row"></div>
+                                </div>
+                            </div>
+                            <div class="col2">
+                                <div class="row-info">
+                                    <div class="left-row">Vị trí công việc</div>
+                                    <div class="right-row">Nhân viên hành chính</div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="left-row">Đơn vị công tác</div>
+                                    <div class="right-row">MISA</div>
+                                </div>
+                                <div class="row-info">
+                                    <div class="left-row">Ngày thử việc</div>
+                                    <div class="right-row"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Kết thúc phần danh sách thông tin nhân viên -->
+        <!-- Author: Nguyễn Ánh Phượng -->
+        <!-- Nội dung: Tạo form thêm nhân viên -->
+        <!--Main-content-->
+        <div id="formAddEmployees" class="main-content hiddenDiv" style="background: #ededed;">
+            <div class="header-main-content display-flex" style="background: #fff;     margin-bottom: 0;">
+                <div class="left-content">
+                    <span class="parent-category c-blue">Hồ sơ</span>
+                    <span class="glyphicon glyphicon-menu-right c-grey"></span>
+                    <span class="category">Thêm nhân viên</span>
+                </div>
+            </div>
+            <div class="tool-bar" style="    box-shadow: 2px 5px 9px #66666654;padding:0; padding-left: 16px;margin-left: 0;height: 30px;align-items: center; justify-items: center; display: flex; background: #fff;">
+                <button id="btnCat" class="btnToolbar"><span class="glyphicon glyphicon-floppy-disk c-blue"></span>Cất</button>
+                <button id="btnCatThem" class="btnToolbar"><span class="glyphicon glyphicon-floppy-open c-blue"></span>Cất & Thêm</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-share-alt c-blue"></span>Hoãn</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-cog c-blue"></span>Thiết lập ngầm định</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-question-sign c-blue"></span>Giúp</button>
+                <button class="btnToolbar"><span class="glyphicon glyphicon-volume-up c-blue"></span>Phản hồi</button>
+                <button id="btnClose" class="btnToolbar"><span class="glyphicon glyphicon-remove c-red"></span>Đóng</button>
+            </div>
+            <div class="main-right-content" style="top: 65px; position: initial; border-bottom: none;    height: calc(100% - 80px);">
+                <div class="box-info-employee" style="height:100%;     margin-top: 10px; padding-top: 20px;     padding-left: 25px; margin-right: 20px">
+                    <div class="form-header">1. Thông tin chung</div>
+                    <div class="content-box display-flex">
+                        <div style="border-bottom: 1px solid #ccc;">
+                            <img src="../Images/ImageHandler1.png" alt="Ảnh đại diện">
+                            <div class="choose-img">Chọn ảnh</div>
+                        </div>
+                        <div class="form-content">
+                            <div class="form-content-information ">
+                                <div class="c1">
+                                    <div class="row-info-add">
+                                        <div class="left-row">Mã nhân viên<span style="color:red; margin-left: 5px">(*)</span></div>
+                                        <div class="right-row"><input id="employeesID" class="txtInput txtInput2" type="text" /></div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Họ và đệm</div>
+                                        <div class="right-row"><input class="txtInput1" type="text" /></div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Tên</div>
+                                        <div class="right-row"><input class="txtInput1" type="text" /></div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Họ và tên<span style="color:red; margin-left: 5px">(*)</span></div>
+                                        <div class="right-row"><input id="name" class="txtInput txtInput2" type="text" /></div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Giới tính</div>
+                                        <div class="right-row">
+                                            <select id="selectGrender" class="txtInput" type="text" name="" style="background:url('../Images/cbo-trigger.png') no-repeat; background-position: 98% 55%;">
+                                                <option>Nam</option>
+                                                <option>Nữ</option>
+                                                <option>Khác</option>
+                                            </select>
+                                            <!--<span class="trigger">
+                                            <img src="../Images/cbo-trigger.png" />
+                                        </span>-->
+                                        </div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Ngày sinh</div>
+                                        <div class="right-row ">
+                                            <div style="width: 171px;border: 1px solid #ccc;height: 100%;border-radius: 3px;">
+                                                <span>
+                                                    <input class="txtInput birthday" type="text" name="birthday" width="150" style="border: none;border-radius: 0;" />
+                                                </span>
+                                                <span class="img-birthday" style="border: none;border-radius: 0;">
+                                                    <img src="../Images/date-trigger.png" no-repeat />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c2">
+                                    <div class="row-info-add">
+                                        <div class="left-row">Địa chỉ</div>
+                                        <div class="right-row  address"><input type="text" /></div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Điện thoại</div>
+                                        <div class="right-row"><input type="text" /></div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Email</div>
+                                        <div class="right-row"><input type="text" /></div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Vị trí công việc<span style="color:red; margin-left: 5px">(*)</span></div>
+                                        <div class="right-row">
+                                            <!--<span> <input class="input2" type="text" name="" value="NV0001 - Giám đốc" /></span>-->
+                                            <select id="selectPosition" class="txtInput txtInput2" type="text" name="" style="background:url('../Images/cbo-trigger.png') no-repeat; background-position: 98% 55%; width: 85%;">
+                                                <option>Giám đốc</option>
+                                                <option>Nhân viên hành chính</option>
+                                                <option>Trưởng phòng</option>
+                                                <option>Trưởng phòng hành chính</option>
+                                                <option>Nhân viên</option>
+                                                <option>Nhân viên PTPM</option>
+                                            </select>
+                                            <!--<span class="trigger">
+                                            <img src="../Images/cbo-trigger.png" />
+                                        </span>-->
+                                            <span class="img-more">
+                                                <img src="../Images/more.png" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row-info-add">
+                                        <div class="left-row">Đơn vị công tác<span style="color:red; margin-left: 5px">(*)</span></div>
+                                        <div class="right-row">
+                                            <!--<span> <input class="input2" type="text" name="" value="Công ty Cổ phần MISA" /></span>-->
+                                            <select id="selectUnit" class="txtInput txtInput2" type="text" name="" style="background:url('../Images/cbo-trigger.png') no-repeat; background-position: 98% 55%; width: 85%;">
+                                                <option>Phòng hành chính tổng hợp</option>
+                                                <option>Trung tâm Phát triển phần mềm</option>
+                                            </select>
+                                            <!--<span class="trigger">
+                                            <img src="../Images/cbo-trigger.png" />
+                                        </span>-->
+                                            <span class="img-more">
+                                                <img src="../Images/more.png" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Kết thúc phần danh sách thông tin nhân viên -->
+
+        <div class="modal fade" id="modal-update">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Sửa thông tin nhân viên</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="POST" class="form" role="form">
+                            <div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Mã nhân viên</label>
+                                    <input type="text" class="form-control" id="update-EmployeeCode" name="EmployeeCode" readonly>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Họ và tên</label>
+                                    <input type="text" class="form-control" id="update-EmployeeName" name="txtEmployeeName" placeholder="Nhập tên nhân viên">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Ngày sinh</label>
+                                    <input type="date" name="DateOfBirth" id="update-DateOfBirth" class="form-control" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Giới tính</label>
+                                    <div class="box-radio">
+                                        <input type="radio" name="gender" value="0" id="men"> <label for="men">Nam</label>
+                                        <input type="radio" name="gender" value="1" id="women"> <label for="women">Nữ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Trình độ đào tạo</label>
+                                    <select name="LeverTraining" id="update-LeverTraining" class="form-control" required="required">
+                                        <option value="Đại học">Đại học</option>
+                                        <option value="Cao đẳng">Cao đẳng</option>
+                                        <option value="Trung cấp">Trung cấp</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Chuyên ngành</label>
+                                    <input type="text" name="Major" id="update-Major" class="form-control" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group col-md-12">
+                                    <label class="" for="">Nơi đào tạo</label>
+                                    <input type="text" name="AddressTraining" id="update-AddressTraining" class="form-control" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Vị trí công việc</label>JobPosition
+                                    <select name="JobPosition" id="update-JobPosition" class="form-control" required="required">
+                                        <option value="Nhân viên văn phòng">Nhân viên văn phòng</option>
+                                        <option value="Lập trình viên">Lập trình viên</option>
+                                        <option value="Nhân viên chăm sóc khách hàng">Nhân viên chăm sóc khách hàng</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Đơn vị công tác</label>
+                                    <input type="text" name="WorkUnit" id="update-WorkUnit" class="form-control" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Ngày thử việc</label>
+                                    <input type="date" name="DateTrial" id="update-DateTrial" class="form-control" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Ngày chính thức</label>
+                                    <input type="date" name="DateOfficial" id="update-DateOfficial" class="form-control" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Số CMT</label>
+                                    <input type="text" name="CMT" id="update-CMT" class="form-control" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="" for="">Hộ chiếu</label>
+                                    <input type="text" name="Passport" id="update-Passport" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" id="btn-update">Lưu</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../Content/js/Script.js"></script>
+</body>
+</html>
